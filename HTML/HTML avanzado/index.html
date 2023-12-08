@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Avanzado</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+    <h2>Ejemplo de tabla</h2>
+    <!--Las tablas son un conjunto estructurado de datos compesto por gilas y columnas.-->
+    <caption>Juego de Basta</caption><!--Título descriptivo de la tabla-->
+    <table border="1" class="table"><!--Espacio asignado para tabla-->
+
+        <tr><!--Fila de la tabla-->
+            <th>Letra</th><!--Encabezado de la tabla-->
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Flor o Fruto</th>
+            <th>Ciudad o Pais</th>
+            <th>Color</th>
+            <th>Objeto</th>
+        </tr>
+        <tr>
+            <td>C</td><!--Columa de la tabla-->
+            <td>Carlos</td>
+            <td>Cervantes</td>
+            <td>Ciruela</td>
+            <td>Canadá</td>
+            <td>Celeste</td>
+            <td>Camión<noscript></noscript></td>
+        </tr>
+        <tr>
+            <td>F</td><!--Columa de la tabla-->
+            <td>Fernando</td>
+            <td>Figueroa</td>
+            <td>Fresa</td>
+            <td>Francia</td>
+            <td>Fosfo</td>
+            <td>Fetuchini<noscript></noscript></td>
+        </tr>
+        <tr>
+            <td>M</td><!--Columa de la tabla-->
+            <td>Marlet</td>
+            <td>Miramontes</td>
+            <td>Mango</td>
+            <td>Montevideo</td>
+            <td>Melón</td>
+            <td>Mugre<noscript></noscript></td>
+        </tr>
+    </table>
+
+    <caption>Errores en mi nombre</caption><!--Título descriptivo de la tabla-->
+    <table border="1" class="tabla"><!--Espacio asignado para tabla-->
+
+        <tr><!--Fila de la tabla-->
+            <th></th>
+            <th>Persona 1</th><!--Encabezado de la tabla-->
+            <th>Persona 2</th>
+            <th>Persona 3</th>
+            <th>Persona 4</th>
+            <th>Persona 5</th>
+            <th>Persona 6</th>
+            <th>Persona 7</th>
+            <th>Persona 8</th>
+            <th>Persona 9</th>
+        </tr>
+        <tr>
+            <th>Primer Nombre</th><!--Primer nombre-->
+            <td>Cindy</td><!--Primer nombre-->
+            <td>Martin</td>
+            <td>Brenda</td>
+            <td>Diego</td>
+            <td>Rey</td>
+            <td>Rocio</td>
+            <td>Rodrigo</td>
+            <td>Uriel</td>
+            <td>Ximena</td>
+        </tr>
+        <tr class="error">
+            <th>Error</th>
+            <td>Sindi</td><!--Error Primer nombre-->
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>Reynaldo</td>
+            <td>Rosío</td>
+            <td>Ricardo</td>
+            <td>NA</td>
+            <td>Jimena</td>
+        </tr>
+        <tr>
+            <th>Segundo Nombre</th>
+            <td>Nereida</td><!--Segundo nombre-->
+            <td>Monserrat</td>
+            <td>Elizabeth</td>
+            <td>Arturo</td>
+            <td>David</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr class="error">
+            <th>Error</th>
+            <td>Nereyda</td><!--Error Segundo nombre-->
+            <td>Montserrath</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <th>Primer Apellido</th>
+            <td>Rejón</td><!--Primer apellido-->
+            <td>Rodriguez</td>
+            <td>Arrieta</td>
+            <td>González</td>
+            <td>Martínez</td>
+            <td>Hernández</td>
+            <td>Macedo</td>
+            <td>Cardoso</td>
+            <td>Muñoz</td>
+        </tr>
+        <tr class="error">
+            <th>Error</th>
+            <td>Rejon</td><!--Error Primer apellido-->
+            <td>Rodrigues</td>
+            <td>Arriaga</td>
+            <td>Gonsales</td>
+            <td>NA</td>
+            <td>Hernandes</td>
+            <td>Marcelo</td>
+            <td>Cardozo</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <th>Segundo Apellido</th>
+            <td>Hernández</td><!--Segundo apellido-->
+            <td>Cortez</td>
+            <td>Delgado</td>
+            <td>Rodríguez</td>
+            <td>Olivares</td>
+            <td>Gutiérrez</td>
+            <td>Valencia</td>
+            <td>Ortiz</td>
+            <td>Diaz</td>
+        </tr>
+        <tr class="error">
+            <th>Error</th>
+            <td>Hernandes</td><!--Error Segundo apellido-->
+            <td>Córtes</td>
+            <td>NA</td>
+            <td>Rodrigues</td>
+            <td>Olívares</td>
+            <td>Gutierres</td>
+            <td>Balencia</td>
+            <td>Ortis</td>
+            <td>Dias</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <thead><!--Agrupa los elementos de la cabecera en la tabla-->
+            <tr>
+                <th colspan="3">Encabezado de tablas</th>
+                <!--El atributo colapsan permite expandir las celdades de datos al numero de columnas que deseamos ocupe-->
+            </tr>
+        </thead><!--Agrupa los elementos de contenido en la tabla-->
+        <tbody>
+            <tr>
+                <td>El cuerpo de la tabla</td>
+                <td>Con dos columnas</td>
+                <td>Columna</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Piesitos</th>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Anclaje: Interno</h2>
+    <br>
+    <ul id="indice">
+        <li><a href="#titulo">¿Adoptar una mascota? Tome en cuenta sus gastos</a></li>
+        <li><a href="#costos">¿Cuánto cuesta mantener una mascota?</a></li>
+        <li><a href="#dueño">Dueño responsable</a></li>
+    </ul>
+    <br>
+    <h3 id="titulo">¿Adoptar una mascota? Tome en cuenta sus gastos</h3>
+    <img width="400px"
+        src="https://www.eleconomista.com.mx/__export/1650592718322/sites/eleconomista/img/2022/04/21/grafico_eleconomista_mexico_finanzas_personales_adopcion_de_mascotas_consejos.png_1947833983.png"
+        alt="Infografia Adoptar una mascota">
+    <p>Las organizaciones protectoras de animales siempre recomiendan tomar en cuenta que el adoptar una mascota
+        representa una responsabilidad por muchos años, pero lo que también debemos tomar en cuenta antes de adoptar es
+        el hecho de que esta responsabilidad también representa un gasto.
+
+
+        Según cifras de MSD Salud Animal México, aproximadamente 57% de las familias tiene una mascota, de las cuales,
+        15% tiene al menos un gato, mientras que 9.6 millones de perros forman parte de una familia.
+
+        Durante la pandemia de Covid-19 hubo un incremento de 41% en la búsqueda de adopción de mascotas, debido a que
+        durante el confinamiento muchas personas sufrieron altos niveles de estrés y ansiedad.
+
+        Varios estudios han comprobado que el tener una mascota en casa tiene beneficios tanto físicos como emocionales,
+        pero ellos también tienen necesidades, por lo que debemos ver por su alimentación, salud, diversión, accesorios,
+        aseo, etc., lo cual podría repercutir en nuestro bolsillo.
+    </p>
+    <a href="#indice">Volver al indice</a>
+    <h3 id="costos">¿Cuánto cuesta mantener una mascota?</h3>
+    <p>
+        El gasto de una mascota dependerá de muchos factores, principalmente la talla del animalito, ya que un perro de
+        talla pequeña no come ni tiene las mismas necesidades que uno de talla grande, por ello antes de adoptar debemos
+        determinar a qué tipo de mascota podemos darle una vida digna.
+
+        Un sondeo realizado por la plataforma de servicios financieros Coru.com y la empresa de estudios de mercado Brad
+        Engagment, arrojó que 45.4% de las personas gasta mensualmente menos de 1,000 pesos en sus mascotas, 41.3% gasta
+        de 1,000 a 2,000, 9% gasta de 2,000 a 3,000 y 3% gasta más de 3,000 pesos mensuales.
+
+        El gasto inicial ronda los 2,000 pesos, entre los accesorios y la comida que debemos comprar, como una cama, un
+        collar, una correa, un plato, juguetes, etc.
+
+        Si desea adoptar un gato, ellos necesitan artículos como un arenero, una pala, su cama, rascador, cepillo y
+        corta uñas, entre otras cosas, que su costo total ronda los 3,700 pesos.
+
+
+        En cuanto al alimento, dependerá de la talla del perro, pero también del tipo de alimento que decida darle a su
+        mascota, existen costales de croquetas desde dos kilos, hasta 30 kilos y su precio en tiendas de autoservicio
+        ronda entre 150 y 1,500 pesos.
+
+        Normalmente un costal de 20 kilos dura alrededor de un mes en mascotas de talla mediana.
+
+        Otro punto que hay que destacar es la salud de nuestro perrito o gatito, ya que las vacunas y las visitas al
+        veterinario representan gran parte del gasto.
+
+        En un inicio, las mascotas requieren de vacunas como la séxtuple para perro y cuádruple para gato, que ronda
+        entre 300 y 500 pesos, posteriormente necesitan desparasitaciones y vacunas antirrábicas por lo menos cada año,
+        estas rondan entre 150 y 300 pesos.
+
+
+        Una visita al veterinario por una revisión general tiene un costo aproximado entre 150 y 500 pesos, y a eso
+        debemos sumarle que, si nuestra mascota enferma, debemos comprarle las medicinas necesarias.
+
+        Por la sobrepoblación de perros y gatos, autoridades y organizaciones de animales recomiendan esterilizar a
+        nuestras mascotas, este procedimiento ronda entre 1,200 y 3,500 pesos, aunque esto dependerá del peso y el sexo
+        de la mascota.
+    </p>
+    <a href="#indice">Volver al indice</a>
+    <h3 id="dueño">Dueño responsable</h3>
+    <p>
+        El gobierno realiza campañas de vacunación y esterilización gratuitas, incluso la Facultad de Medicina
+        Veterinaria y Zootecnia de la UNAM puso a disposición servicios de esterilización con costos de recuperación
+        desde 650 a 1,200 pesos.
+
+
+        Además de esto, debe contemplar que su mascota necesita aseo, muchas personas optan por bañar y cepillar a su
+        mascota ellas mismas, por lo que únicamente gastan entre 200 y 300 pesos al año, sin embargo, hay quienes
+        prefieren llevar a sus mascotas a estéticas caninas, por lo que el servicio varía desde 100 hasta 800 pesos por
+        servicio.
+
+        Por otra parte, los animalitos necesitan distracciones, es por ello que habrá que comprarle algunos juguetes
+        cuyo costo fluctúa entre 100 y 500 pesos.
+
+        Estos son solo algunos gastos que representa el tener una mascota en casa, sin contar los imprevistos, como
+        cuando salimos de vacaciones y debemos dejar a nuestro perro o gato con algún cuidador que cobra desde 200 hasta
+        800 pesos por día, o cuando se enferman y requieren de procedimientos médico.
+
+        De acuerdo a todo lo anterior, una persona podría gastar entre 15,000 y 25,000 pesos al año en mantener a una
+        mascota con sus necesidades básicas; esto varía, ya que muchos gastan un poquito más en darle lo mejor a sus
+        mascotas, pues son un integrante más de la familia.
+    </p>
+    <a href="#indice">Volver al indice</a>
+    <br>
+    <h2>Anclaje: Externo</h2>
+    <a href="https://www.adopta.mx" target="_blank">Adopta en
+        GDL</a><!--Atraves del atributo href anclamos la url del sitio externo-->
+    <h3>Anlcar un numero telefónico </h3>
+    <a href="tel:+523318712353" target="_blank">Llamar a fulanito</a>
+    <h3>Anlcaje a Whatsapp</h3>
+    <a href="https://wa.me/1234567890" target="_blank">Enviar un whatsapp</a>
+    <h3>Anclaje de Mapa</h3>
+    <a href="https://www.google.com/maps/d/u/0/viewer?mid=1hm4ySfl2rw-WTqt308bBBEa80VU&hl=en_US&ll=20.754167000000006%2C-105.26&z=10"
+        target="_blank">Ver ubicación a la playa</a>
+    <h3>Anclaje a redes sociales</h3>
+    <ul>
+        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjmrvu7pvaCAxW-ke4BHRdEDZkQFnoECA0QAQ&url=https%3A%2F%2Fwww.facebook.com%2Fgenerationmexico%2F%3Flocale%3Des_LA&usg=AOvVaw1y8bZk_jJFRc7YQHytAzso&opi=89978449"
+                target="_blank">Facebook</a></li>
+        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjm2s3FpvaCAxWZh-4BHXRdBmkQFnoECAoQAQ&url=https%3A%2F%2Fwww.instagram.com%2Fgeneration_mxnacional%2F%3Fhl%3Des-la&usg=AOvVaw2QowRGY0HpWEgfHKHBs4kH&opi=89978449"
+                target="_blank">Instagram</a></li>
+        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwijuLrRpvaCAxX-JEQIHfgACKIQFnoECAoQAQ&url=https%3A%2F%2Ftwitter.com%2FGenerationMx1&usg=AOvVaw1m6T_xYOJsX9hpwzVv7Qvh&opi=89978449"
+                target="_blank">Twitter</a></li>
+    </ul>
+    <br>
+    <hr>
+    <h2>Formularios y Tipos de Entradas</h2>
+    <form method="post" action="/url"><!--Indica que el contenido es un formulario-->
+        <!--method: Define el metodo http para enviar datos (Get/Post)-->
+        <!--action: Especifica la url a la que se enviaràn los datos-->
+
+    </form>
+    <h3>Etiqueta Input</h3><!--Campo de entrada-->
+    <p>input type="text"</p>
+    <!--
+        type: Define el tipo de entrada
+        name: identificador del campo
+        placeholder: texto ejemplo a forma de instrucción
+    -->
+    <input type="text" name="usuario" placeholder="Escriba su nombre">
+    <p>input type="password"</p>
+    <input type="password" name="contraseña" placeholder="Escriba su contraseña">
+    <p>input type="tel"</p>
+    <input type="tel" name="telefono" placeholder="Ingrese su número telefónico">
+    <p>input type="radio"</p>
+    <input type="radio" name="seleccion_unica">
+    <p>input type="checkbox"</p>
+    <input type="checkbox" name="seleccion_multiple">
+    <p>input type="email"</p>
+    <input type="email" name="correo" placeholder="Escriba su email">
+    <p>input type="file"</p>
+    <input type="file" name="archivo" placeholder="">
+    <p>input type="number"</p>
+    <input type="number" name="" placeholder="">
+    <p>input type="range"</p>
+    <input type="range" name="numero" placeholder="">
+    <p>input type="search"</p>
+    <input type="search" name="buscar" placeholder="">
+    <p>input type="time"</p>
+    <input type="time" name="hora" placeholder="">
+    <p>input type="date"</p>
+    <input type="date" name="fecha">
+    <p>input type="submit"</p>
+    <input type="submit" name="enviar" placeholder="">
+    <p>input type="reset"</p>
+    <input type="reset" name="restablecer" placeholder="">
+    <p>input type="url"</p>
+    <input type="url" name="url" placeholder="">
+    <br>
+    <h3>Etiqueta Label</h3><!--Se utiliza para etiquetar un elemento de entrada en un formulario-->
+    <label method="get" action="enviar">Nombre:</label>
+    <!--
+    for: Atributo asociado al ID
+-->
+    <br>
+    <h3>Etiqueta botón</h3>
+    <button
+        type="submit">Enviar</button><!--envía los datos del formulario a la página web definida por el atributo action del elemento <form>.-->
+    <button
+        type="reset">Limpiar</button><!--restablece de inmediato todos los controles de formulario a su valor predeterminado.-->
+    <h3>Etiqueta área de texto</h3>
+    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+    <h3>Ejemplo de Formulario</h3>
+    <form action="/url" method="post">
+        <ul>
+            <li>
+                <label for="usuario"> Usuario:</label>
+                <input type="text" id="usuario" name="nombre_usuario" placeholder="Escriba su usuario">
+
+            </li>
+            <li>
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="mail" name="user_mail" />
+            </li>
+            <li>
+                <label for="msg">Mensaje:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Envíe su mensaje</button>
+            </li>
+        </ul>
+    </form>
+    <br>
+    <hr>
+
+
+</body>
+
+</html>

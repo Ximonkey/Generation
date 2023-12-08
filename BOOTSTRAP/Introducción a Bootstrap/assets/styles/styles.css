@@ -1,0 +1,55 @@
+
+:root{
+    --primary-color: #ACF241;
+    --secondary-color: #F24C3D;
+    --tertiary-color: #F2C12E;
+    --nav-color: #F2E530;
+    --background-color: #1D1D1D
+    ;
+    --white: #fff;
+    --black: #000;
+}
+
+/**Globales**/
+
+body {
+    background-color: var(--background-color);
+    color: var(--white);
+    text-align: center;
+}
+
+h1,
+h2 {
+    text-align: center;
+    padding-top: 25px 0;
+
+}
+/**Navegación**/
+
+.navbar{
+background-color: var(--nav-color);
+}
+¡
+
+
+/**Contenedores**/
+.contenedor{
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#clase-contenedor{
+    background-color: var(--primary-color);
+}
+#clase-row{
+    background-color: var(--secondary-color);
+}
+#clase-col {
+    background-color: var(--tertiary-color);
+}
+

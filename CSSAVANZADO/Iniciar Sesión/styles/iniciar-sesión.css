@@ -1,0 +1,168 @@
+:root {
+    --font-family-primary: 'Montserrat Alternates', sans-serif;
+    --font-family-secondary: 'Montserrat', sans-serif;
+    --font-family-third: 'Roboto', sans-serif;
+    --primary-color: #1D1D1D;
+    --secondary-color: #6B43FF;
+    --third-color: #6667B0;
+    --white: #fff;
+
+}
+
+/** Globales **/
+
+body {
+    font-family: var(--font-family-secondary);
+    font-weight: bold;
+}
+
+h1 {
+    font-family: var(--font-family-primary);
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/**Contenedor Principal**/
+
+.contenedor-sesion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/**Sección Formulario e Imágen**/
+.contenedor-sesion-formulario {
+    margin: 5em;
+    border: 1px;
+    padding: 50px 35px;
+    border-color: #D1D2FA;
+    box-shadow: 5px 5px 5px 5px #5E5E5E;
+}
+
+.contenedor-sesion-imagen {
+    background: linear-gradient(to right, var(--white), #B492FD, #AD4EF5);
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-sesion-imagen img {
+    align-self: center;
+}
+
+/**Botones Google y Apple**/
+
+.logo {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.crear-cuenta p {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 600;
+    font-family: var(--font-family-primary);
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 205px;
+    height: 70px;
+    border: solid var(--primary-color) 1px;
+    border-radius: 12px;
+    margin: 25px;
+}
+
+.boton p {
+    font-family: var(--font-family-secondary);
+}
+
+/**Línea opción**/
+
+.opcion {
+    text-align: center;
+}
+
+.opcion hr {
+    display: inline-block;
+    width: 40%;
+    border-top: 1px solid var(--third-color);
+    margin: 0 10px;
+}
+
+.opcion span {
+    display: inline-block;
+    padding: 0 10px;
+    background-color: var(--white);
+}
+
+/**Formulario**/
+.campo {
+    margin: 20px;
+}
+
+.contenedor-formulario {
+    background-color: var(--white);
+}
+
+label {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border: solid var(--primary-color) 1px;
+    border-radius: 5px;
+
+}
+
+input::placeholder {
+    color: var(--third-color);
+    font-size: 18px;
+}
+
+.enlace {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.enlace a {
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+/**Boton login**/
+
+.contenedor-boton-login{
+    margin: 40px 20px 0 20px;
+}
+
+.boton-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#boton-login {
+    background-color: var(--secondary-color);
+    font-family: var(--font-family-third);
+    font-size: 20px;
+    border-color: var(--secondary-color);
+    color: #F4F1FF;
+}
+
+
+
