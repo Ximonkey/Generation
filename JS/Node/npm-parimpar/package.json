@@ -1,0 +1,17 @@
+{
+  "name": "npm-parimpar-ximenadev",
+  "version": "1.0.0",
+  "description": "Pemite determinar si el numero es par o impar",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "generation",
+    "parimpar"
+  ],
+  "author": "Ximena Muñoz",
+  "license": "ISC"
+   
+}
