@@ -1,0 +1,9 @@
+package org.generation.collections;
+
+public class ArrayListCollections {
+public static void main (String[] args) {
+	String[] names = {};
+	
+	
+}
+}

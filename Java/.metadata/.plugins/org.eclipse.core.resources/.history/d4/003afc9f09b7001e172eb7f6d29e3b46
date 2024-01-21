@@ -1,0 +1,18 @@
+package org.generation.exercises;
+
+import java.util.HashSet;
+
+public class HashSetCollection {
+
+	public static void main(String[] args) {
+		
+		HashSet<String> animals = new HashSet<String>();
+		
+		animals.add("Zebra");
+		
+		//Conocer si un elemento se encuentra dentro del Set: contains();
+		System.out.println(animals.contains("Capibara"));
+
+	}
+
+}

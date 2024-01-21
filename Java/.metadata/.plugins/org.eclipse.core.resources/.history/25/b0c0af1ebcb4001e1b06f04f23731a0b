@@ -1,0 +1,158 @@
+package controlFlow;
+import java.util.Scanner;
+
+public class ControlFlow {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		/** Estructura condicional **/
+		
+		
+		
+				//if simple
+				
+				boolean conexion = true;
+				
+				if (!conexion) {
+					System.out.println("Su conexión a internet es inestable. No se pudo cargar el sitio web...");
+				}
+				
+				//if - else simple
+				
+				if (conexion) {
+					System.out.println("Su conexión a internet es estable. Cargando sitio web...");
+				}else {
+					System.out.println("Su conexión a internet es inestable. No se pudo cargar el sitio web...");
+				}
+		
+				//if anidados
+				
+				boolean usuario = true;
+				String nombreUsuario = "";
+				String contraseña1 = "";
+				String contraseña2 = "";
+				
+				if (conexion) {
+					if(usuario) {
+						System.out.println("Ingrese el nombre de usuario:");
+						nombreUsuario = scanner.nextLine();
+						
+						System.out.println("Ingrese la contraseña:");
+						contraseña1 = scanner.nextLine();
+						
+						System.out.println("Ingrese la contraseña nuevamente:");
+						contraseña2 = scanner.nextLine();
+						
+						// Verificar si las contraseñas coinciden
+				        if (contraseña1.equals(contraseña2)) {
+				            System.out.println("Las contraseñas coinciden. Acceso permitido.");
+				        } else {
+				            System.out.println("Las contraseñas no coinciden. Acceso denegado.");
+				        }
+		
+				        
+				        
+					}else {
+						System.out.println("Por favor, crea una cuenta");
+					}
+				}else {
+					System.out.println("Su conexión a internet es inestable. No se pudo cargar el sitio web...");
+				}
+				
+				//Switch
+				
+				System.out.println("Bienvenido al sistema. Por favor eliga una opción");
+				System.out.println("1. Ver tienda");
+				System.out.println("2. Mostrar información de contacto");
+				System.out.println("3. Ver mi perfil");
+				System.out.println("4. Cerrar sesión");
+				
+				int opcion = scanner.nextInt();
+				
+				switch(opcion) {
+				
+				case 1:
+					System.out.println("Cátalogo 2024");
+					System.out.println("Botas Terrenaitor | 20MX - 27MX | $350");
+					System.out.println("Tacones Elegant | 20MX - 25MX | $250");
+					System.out.println("Tenis Git Rush | 20MX - 29MX | $450");
+					System.out.println("Chanclas Fly | 20MX - 28MX | $150");
+					break;
+				case 2:
+					System.out.println("Información de contacto\n"+
+										"Ubicación: C. Ubicada 123 Col. Maps CP. 45609\n"+
+										"Horario: L-S 09am - 8pm | D 01pm - 5pm\n"+
+										"Teléfono: 333 333 333\n");
+					break;
+				case 3:
+					System.out.println("Nombre de Usuario: "+ nombreUsuario);
+					System.out.println("Contraseña: "+ contraseña1);
+					break;
+				case 4:
+					System.out.println("Gracias por su visita.");
+					break;
+				}
+				
+				//Operador Ternario
+				
+				 //Es una forma reducida de escribir un if-then-else.
+				 //(expresion)?valor_true:valor_false;
+				
+				
+				System.out.println(contraseña1.equals(contraseña2) ? "Las contraseñas coinciden. Acceso permitido." : "Las contraseñas no coinciden. Acceso denegado.");
+				
+				
+			
+				
+		
+		/** Estructura repetitiva **/
+		
+		//while
+				
+		
+		
+		//do - while
+		
+			//https://elcodigoascii.com.ar
+			
+			boolean repetir = true;
+			char caracter = ' ';
+			String tipo = "ni letra ni numero";
+			
+			do{
+				System.out.println("Binevenidoo a Magin Program");
+				System.out.println("Ingrese un caracter");
+				caracter = scanner.next().charAt(0);
+				
+				if(caracter >= 48 && caracter <= 57) {
+					tipo = "numero";
+				}
+				if((caracter>=65 && caracter <=90) || (caracter>=97 && caracter <=122)) {
+					tipo = "letra";
+				}
+				
+				System.out.println("El caracter introducido es de tipo " + tipo);
+	            System.out.println("¿Desea intentarlo otra vez? (true/false)");
+	            repetir = scanner.nextBoolean();
+	
+				
+			}while(repetir);
+			
+			// Cerrar el scanner
+	        scanner.close();
+		
+		//for
+			for (int i = 1; i <= 10; i++) {
+			    System.out.println("Contando números del 1 al 10. "+i);
+			}
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+package introduction;
+import java.util.Scanner;
+
+public class operators {
+
+	public static void main(String[] args) {
+		int edad = scanner.nextInt();
+		/**Java Logical Operators**
+	You can test for true or false values with logical operators.
+
+	
+	Operator	Name		Description	
+	&& 			Logical and	Returns true if both statements are true		
+	|| 			Logical or	Returns true if one of the statements is true	
+	!			Logical not	Reverse the result, returns false if the result is true	*/
+	
+		 System.out.println("Ingrese su edad:");
+	        
+
+	        // Verificar la elegibilidad para votar
+	        if (edad >= 18) {
+	            System.out.println("¡Felicidades! Eres elegible para votar.");
+	        } else {
+	            System.out.println("Lo siento, debes tener al menos 18 años para votar.");
+	            System.out.println("Faltan " + (18 - edad) + " años para ser elegible.");
+	        }
+		
+	}
+}

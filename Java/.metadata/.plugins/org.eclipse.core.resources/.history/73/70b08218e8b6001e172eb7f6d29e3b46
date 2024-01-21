@@ -1,0 +1,11 @@
+package org.generation.collections;
+
+import java.util.Arrays;
+
+public class ArrayListCollections {
+	public static void main(String[] args) {
+		String[] names = {"Eunice", "Abigail", "Rey", "David", "Braulio", "Rubén", "Lucero"};
+		//Imprimir Array
+		System.out.println(Arrays.toString(names));
+	}
+}

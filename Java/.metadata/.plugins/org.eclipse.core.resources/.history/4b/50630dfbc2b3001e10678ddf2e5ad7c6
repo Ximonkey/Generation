@@ -1,0 +1,29 @@
+package introduction;
+
+public class dataTypes {
+
+	public static void main(String[] args) {
+
+		System.out.println("Hola CH35");
+		
+		
+		/*Comentario
+		  multilinea
+		 */
+		
+		//Comentario una sola línea
+		
+		
+		/*Tipos de dato*/
+		//boolean = true o false = 1 bit
+		//char = Cáracter Unicode = 16 bits
+		//byte = Entero con signo = 8 bits = [-128 a 128]
+		//short = Entero con signo = 16 bits = [-32768 a 32767]
+		//int = Entero con signo = 32 bits = [-2147483648 a 2147483647]
+		//long = Entero con signo = 64 bits = [-92233720368775808 a 92233720368775807]
+		//float = Flotante de precisión simple = 32 bits = 
+		//double = Flotante de precisión doble  = 64 bits = 
+	
+	}
+
+}

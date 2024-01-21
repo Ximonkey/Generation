@@ -1,0 +1,43 @@
+package introduction;
+
+public class dataTypes {
+
+	public static void main(String[] args) {
+
+		System.out.println("Hola CH35");
+		
+		
+		/*Comentario
+		  multilinea
+		 */
+		
+		//Comentario una sola línea
+		
+		
+		/*Tipos de dato*/
+		//boolean = true o false = 1 bit
+		boolean nuevoUsuario = true;
+		System.out.println("Tipo de dato boolen" + nuevoUsuario);
+		//char = Cáracter Unicode = 16 bits
+		char caracter = 3;
+		System.out.println("Tipo de dato char" + caracter);
+		//byte = Entero con signo = 8 bits = [-128 a 127]
+		byte piso = 127;
+		System.out.println("Tipo de dato byte" + piso);
+		//short = Entero con signo = 16 bits = [-32768 a 32767]
+		char total = 1500;
+		System.out.println("Tipo de dato char" + total);
+		//int = Entero con signo = 32 bits = [-2147483648 a 2147483647]
+		int visitas = 456320;
+		System.out.println("Tipo de dato int" + visitas);
+		//long = Entero con signo = 64 bits = [-92233720368775808 a 92233720368775807]
+		char caracter = 3;
+		System.out.println("Tipo de dato char" + caracter);
+		//float = Flotante de precisión simple = 32 bits = 
+		char caracter = 3;
+		System.out.println("Tipo de dato char" + caracter);
+		//double = Flotante de precisión doble  = 64 bits = 
+	
+	}
+
+}

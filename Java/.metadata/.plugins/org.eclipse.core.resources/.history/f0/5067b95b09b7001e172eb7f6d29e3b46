@@ -1,0 +1,10 @@
+package org.generation.exercises;
+
+public class HashSetCollection {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,93 @@
+/*Promocional*/
+.promocional{
+    padding-bottom: 250px;
+}
+
+
+
+.contenedor {
+    position: relative;
+}
+/*Misión*/
+
+.mision{
+    padding-bottom: 150px;
+}
+
+.m-div1 {
+    background-color: #3D3D3D; /* Color de fondo del primer div */
+    margin-left: 250px;
+}
+
+.m-div2 {
+    background-color: #4CAF50; /* Color de fondo del segundo div */
+    width: 350px;
+    position: absolute;
+    top: -170px; /* Ajusta la posición superior según tus necesidades */
+    left: 50px; /* Ajusta la posición izquierda según tus necesidades */
+    z-index: 1; /* Ajusta el índice z para superponer el div encima del otro */
+}
+
+.m-content{
+    padding-left: 150px;
+}
+/*visión*/
+.vision{
+    padding-bottom: 50px;
+}
+
+.v-div1 {
+    background-color: #3D3D3D; /* Color de fondo del primer div */
+    margin-right: 250px;
+}
+
+.v-div2 {
+    background-color: #4CAF50; /* Color de fondo del segundo div */
+    width: 370px;
+    position: absolute;
+    top: -150px; /* Ajusta la posición superior según tus necesidades */
+    right: 50px; /* Ajusta la posición izquierda según tus necesidades */
+    z-index: 1; /* Ajusta el índice z para superponer el div encima del otro */
+}
+.v-content{
+    padding-left: 50px;
+    padding-right: 150px;
+}
+/**Valores**/
+.vision{
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+/**Footer**/
+
+.footer{
+    background-color: black;
+}
+
+.img-r{
+    width: 200px !important;
+}
+
+@media (min-width: 576px) {
+    .img-r {
+        width: 250px !important;
+    }
+}
+
+.icos {
+    width: 20px !important;
+}
+
+@media (min-width: 576px) {
+    .icos {
+        width: 32px !important;
+    }
+}

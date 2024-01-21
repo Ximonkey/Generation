@@ -1,0 +1,43 @@
+package functions;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Functions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Producto chealsea = new Producto ("Chealsea", 92.78);
+		Producto skipper = new Producto ("Skipper", 92.78);
+		
+	}
+	
+	 static class Producto{
+		String nombre;
+		double precio;
+		
+		Producto (String nombre, double precio){
+			this.nombre = nombre;
+			this.precio = precio;
+		}
+	}
+	
+	 static class CarritoCompra {
+		 List<Producto> productos  = new ArrayList<>();
+		 
+		 void agerarProducto(Producto barbie) {
+			 productos.add(barbie);
+		 }
+		 
+		 double calcularTotal() {
+			 double total = 0;
+			 
+			 for(Producto barbie : productos) {
+				 total +=barbie.precio;
+			 }
+			 
+			 return total;
+		 }
+	 }
+
+}
